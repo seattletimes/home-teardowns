@@ -5,8 +5,8 @@
       "path": "home-teardowns"
     },
     "live": {
-      "bucket": "",
-      "path": ""
+      "bucket": "projects.seattletimes.com",
+      "path": "2016/business/home-teardowns"
     }
   },
   "title": "",
