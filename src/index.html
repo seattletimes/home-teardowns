@@ -7,6 +7,8 @@
   </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Safari, you're the worst -->
+  <meta name='format-detection' content='telephone=no'>
   <link rel="stylesheet" type="text/css" href="style.css">
   <% /*= t.include("partials/_adHead.html") */ %>
 
@@ -61,7 +63,7 @@
                 <%= t.include("teardowns6.geo.json") %>
               </geo-data>
               <geo-style>{ "weight": 1, "color": "#fff", "fillOpacity":0.7 }</geo-style>
-              <geo-palette property="Copy of tear down map data by city any_Teardowns">
+              <geo-palette property="Teardowns">
                 <color-mapping max=5 color="#fef0d9"></color-mapping>
                 <color-mapping min=5.1 max=10 color="#fdcc8a"></color-mapping>
                 <color-mapping min=10.1 max=20 color="#fc8d59"></color-mapping>
@@ -69,11 +71,11 @@
                 <color-mapping min=50.1 color="#b30000"></color-mapping>
               </geo-palette>
               <geo-popup>
-                <h1 class="bigheader"> {{CITYNAME}}</h1>
+                <h1 class="bigheader">{{CITYNAME}}</h1>
                   <div class="popupText"> Teardowns per 10,000 residents:</div>
-                    <h1 class="bigheader"> {{Copy of tear down map data by city any_Teardowns}}</h1>
+                    <h1 class="bigheader"> {{Teardowns}}</h1>
                     <div class="popupText"> Teardowns since 2006:</div>
-                      <h1 class="bigheader"> {{Copy of tear down map data by city any_Teardowns since 2006}}</h1>
+                      <h1 class="bigheader"> {{Teardowns since 2006}}</h1>
               </geo-popup>
             </geo-json>
           </leaflet-map>
